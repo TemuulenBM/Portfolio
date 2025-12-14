@@ -1,0 +1,211 @@
+Create a modern, futuristic full-stack engineer portfolio website as a single-page React application with TypeScript and Tailwind CSS.
+
+DESIGN STYLE:
+- Cyberpunk/futuristic aesthetic with glassmorphism effects
+- Dark theme with neon accents
+- Color palette: Background #0a0a0a, Primary #00f0ff (cyan), Secondary #b537ff (purple), Accent #ff006e (pink)
+- Smooth animations and transitions throughout
+- Particle background or animated grid
+- Neon glow effects on hover
+- Glassmorphic cards with backdrop-blur
+
+NAVIGATION:
+- Sticky transparent navbar with blur effect
+- Logo/name on left
+- Navigation links: About, Skills, Projects, Experience, Contact
+- Smooth scroll to sections
+- Mobile hamburger menu with slide-in animation
+- Active section highlighting
+
+HERO SECTION:
+- Full viewport height
+- Animated typing effect: "Hi, I'm Alex Morgan"
+- Subtitle: "Full-Stack Engineer | Building the Future"
+- Two CTA buttons: "View Projects" and "Contact Me" with neon glow
+- Floating geometric shapes animation in background
+- Particle effect or animated grid background
+
+ABOUT SECTION:
+- Two-column layout (image left, content right)
+- Professional photo placeholder with neon border effect
+- Bio text: "I'm a passionate full-stack engineer with 5+ years of experience building scalable web applications. I specialize in React, Node.js, and cloud architecture. I love turning complex problems into elegant solutions and staying on the cutting edge of technology."
+- Add animated counter stats: "50+ Projects", "5+ Years", "100% Passion"
+
+SKILLS SECTION:
+- Title: "Tech Arsenal"
+- Grid of skill cards organized by category
+- Categories with icons and animated progress bars:
+
+Frontend:
+- React (95%)
+- Next.js (90%)
+- TypeScript (92%)
+- Vue.js (85%)
+- Tailwind CSS (98%)
+
+Backend:
+- Node.js (93%)
+- Python (88%)
+- Express (90%)
+- Django (85%)
+- PostgreSQL (87%)
+- MongoDB (90%)
+
+DevOps & Tools:
+- Docker (88%)
+- AWS (85%)
+- Git (95%)
+- CI/CD (82%)
+- Kubernetes (80%)
+
+- Each skill card has glow effect on hover
+- Progress bars animate on scroll into view
+
+PROJECTS SECTION:
+- Title: "Featured Projects"
+- Filter buttons: All, Frontend, Backend, Full-Stack
+- Grid layout (3 columns desktop, 2 tablet, 1 mobile)
+- 6 project cards:
+
+Project 1:
+- Title: "E-Commerce Platform"
+- Description: "Full-stack e-commerce solution with real-time inventory and payment processing"
+- Tech: React, Node.js, MongoDB, Stripe
+- Category: Full-Stack
+
+Project 2:
+- Title: "AI Dashboard"
+- Description: "Analytics dashboard with machine learning insights and data visualization"
+- Tech: Next.js, Python, TensorFlow, D3.js
+- Category: Full-Stack
+
+Project 3:
+- Title: "Task Management App"
+- Description: "Collaborative project management tool with real-time updates"
+- Tech: React, Firebase, Material-UI
+- Category: Frontend
+
+Project 4:
+- Title: "REST API Service"
+- Description: "Scalable microservices architecture with authentication and rate limiting"
+- Tech: Node.js, Express, PostgreSQL, Redis
+- Category: Backend
+
+Project 5:
+- Title: "Social Media Platform"
+- Description: "Instagram-like social network with real-time messaging and media sharing"
+- Tech: Next.js, GraphQL, AWS, Socket.io
+- Category: Full-Stack
+
+Project 6:
+- Title: "DevOps Pipeline"
+- Description: "Automated CI/CD pipeline with containerization and monitoring"
+- Tech: Docker, Kubernetes, Jenkins, AWS
+- Category: Backend
+
+- Each card: image placeholder, title, description, tech tags, "Live Demo" and "GitHub" buttons
+- Cards lift and glow on hover
+
+EXPERIENCE SECTION:
+- Title: "Journey"
+- Vertical timeline with animated connector line
+- 4 experience entries:
+
+Experience 1:
+- Company: "TechCorp Inc."
+- Role: "Senior Full-Stack Engineer"
+- Duration: "2022 - Present"
+- Achievements:
+  • Led development of microservices architecture serving 1M+ users
+  • Reduced API response time by 60% through optimization
+  • Mentored 5 junior developers
+- Tech: React, Node.js, AWS, Docker
+
+Experience 2:
+- Company: "StartupXYZ"
+- Role: "Full-Stack Developer"
+- Duration: "2020 - 2022"
+- Achievements:
+  • Built MVP from scratch that secured $2M funding
+  • Implemented real-time features using WebSockets
+  • Reduced infrastructure costs by 40%
+- Tech: Vue.js, Python, PostgreSQL, GCP
+
+Experience 3:
+- Company: "Digital Agency Pro"
+- Role: "Frontend Developer"
+- Duration: "2019 - 2020"
+- Achievements:
+  • Developed 15+ responsive websites for clients
+  • Improved page load speeds by 70%
+  • Established component library and design system
+- Tech: React, TypeScript, Sass, Figma
+
+Experience 4:
+- Company: "Freelance"
+- Role: "Web Developer"
+- Duration: "2018 - 2019"
+- Achievements:
+  • Completed 20+ projects for various clients
+  • Specialized in e-commerce and business websites
+  • Built long-term relationships with repeat clients
+- Tech: JavaScript, PHP, WordPress, MySQL
+
+- Animate entries on scroll
+
+CONTACT SECTION:
+- Title: "Let's Build Something Amazing"
+- Two-column layout
+- Left column: Contact form with futuristic inputs
+  • Name field
+  • Email field
+  • Subject field
+  • Message textarea
+  • Submit button with neon glow
+  • Animated underline on focus
+- Right column: Contact information cards
+  • Email: alex.morgan@example.com (with icon)
+  • Location: San Francisco, CA (with icon)
+  • Social links: GitHub, LinkedIn, Twitter (with icons)
+- Form validation and success message animation
+
+FOOTER:
+- Copyright text: "© 2024 Alex Morgan. Built with React & TypeScript"
+- Social media icons
+- "Back to top" button
+- Subtle particle effect background
+
+ANIMATIONS & EFFECTS:
+- Use framer-motion for all animations
+- Fade-in on scroll for all sections
+- Typing animation in hero using react-type-animation
+- Smooth scroll behavior
+- Hover effects with scale and glow
+- Loading animation on page load
+- Stagger animations for cards and list items
+- Parallax effect on hero background
+- Custom cursor trail effect (optional)
+
+TECHNICAL REQUIREMENTS:
+- Fully responsive (mobile, tablet, desktop)
+- Use lucide-react for icons
+- Use Inter font family
+- Implement lazy loading for images
+- Add meta tags for SEO
+- Make it accessible (ARIA labels, keyboard navigation)
+- Smooth transitions between all states
+- No console errors
+- Clean, organized component structure
+- Use TypeScript interfaces for all props
+- Add comments for complex logic
+
+ADDITIONAL FEATURES:
+- Floating "Back to Top" button appears after scrolling
+- Active navigation link highlights based on scroll position
+- Mobile menu closes on link click
+- Form submission shows success toast notification
+- All external links open in new tab
+- Loading skeleton for project images
+- Error boundaries for production
+
+Make this portfolio visually stunning with pixel-perfect design, smooth animations, and production-ready code. The design should feel like a modern sci-fi interface with attention to every detail.

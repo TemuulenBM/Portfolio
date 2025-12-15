@@ -93,21 +93,21 @@ export default function AboutSection() {
               className="space-y-6"
             >
               <p className="text-lg text-gray-300 leading-relaxed" data-testid="text-about-bio">
-                I'm a passionate full-stack engineer with 5+ years of experience building 
-                scalable web applications. I specialize in React, Node.js, and cloud 
-                architecture.
+                I'm a passionate full-stack developer with 1 year of experience building 
+                modern web applications. I specialize in React, Next.js, Node.js, and TypeScript, 
+                with hands-on experience in enterprise-level projects.
               </p>
               <p className="text-lg text-gray-300 leading-relaxed">
-                I love turning complex problems into elegant solutions and staying on 
-                the cutting edge of technology. When I'm not coding, you'll find me 
-                exploring new frameworks or contributing to open source.
+                I've worked on diverse projects including e-commerce platforms, client management 
+                systems, and enterprise automation tools. I love learning new technologies, 
+                solving complex problems, and building scalable solutions that make a real impact.
               </p>
             </motion.div>
           </div>
 
           <div className="grid grid-cols-3 gap-8 mt-16">
-            <AnimatedCounter end={50} suffix="+" label="Projects" icon={Briefcase} />
-            <AnimatedCounter end={5} suffix="+" label="Years" icon={User} />
+            <AnimatedCounter end={4} suffix="+" label="Projects" icon={Briefcase} />
+            <AnimatedCounter end={1} suffix=" Year" label="Experience" icon={User} />
             <AnimatedCounter end={100} suffix="%" label="Passion" icon={Heart} />
           </div>
         </motion.div>

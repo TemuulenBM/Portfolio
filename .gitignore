@@ -8,3 +8,9 @@ vite.config.ts.*
 .env
 .env.local
 .env.*.local
+
+# Project summary files
+BOT_CONVERSION.md
+FREELANCE_CLIENT_PORTAL.md
+MINIMOOD_KIDS.md
+MOVEMONGOLIA.md

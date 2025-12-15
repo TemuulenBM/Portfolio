@@ -58,7 +58,7 @@ export default function HeroSection() {
           className="text-xl md:text-2xl text-gray-400 mb-12"
           data-testid="text-hero-subtitle"
         >
-          Full-Stack Engineer | Building the Future
+          Full-Stack Developer | Passionate About Building Great Products
         </motion.p>
 
         <motion.div

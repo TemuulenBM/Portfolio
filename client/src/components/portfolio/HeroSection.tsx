@@ -35,13 +35,13 @@ export default function HeroSection() {
             <span className="bg-gradient-to-r from-neon-cyan via-neon-purple to-neon-pink bg-clip-text text-transparent">
               <TypeAnimation
                 sequence={[
-                  "Alex Morgan",
+                  "Temuulen Bayanmunkh",
                   3000,
                   "a Developer",
                   2000,
                   "a Creator",
                   2000,
-                  "Alex Morgan",
+                  "Temuulen Bayanmunkh",
                   3000,
                 ]}
                 repeat={Infinity}

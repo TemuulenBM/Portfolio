@@ -61,7 +61,7 @@ export default function Navbar() {
             whileHover={{ scale: 1.05 }}
             data-testid="link-logo"
           >
-            AM
+            TB
           </motion.a>
 
           <div className="hidden md:flex items-center gap-8">

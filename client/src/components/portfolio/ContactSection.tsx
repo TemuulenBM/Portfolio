@@ -22,7 +22,7 @@ interface SocialLink {
 }
 
 const contactInfo: ContactInfo[] = [
-  { icon: Mail, label: "Email", value: "alex.morgan@example.com", href: "mailto:alex.morgan@example.com" },
+  { icon: Mail, label: "Email", value: "temuulen.bayanmunkh@example.com", href: "mailto:temuulen.bayanmunkh@example.com" },
   { icon: MapPin, label: "Location", value: "San Francisco, CA" },
 ];
 

@@ -29,7 +29,7 @@ export default function Footer() {
       <div className="max-w-7xl mx-auto">
         <div className="flex flex-col md:flex-row items-center justify-between gap-6">
           <div className="flex items-center gap-2 text-gray-400">
-            <span>2024 Alex Morgan. Built with</span>
+            <span>2024 Temuulen Bayanmunkh. Built with</span>
             <Heart className="w-4 h-4 text-neon-pink fill-neon-pink" />
             <span>using React & TypeScript</span>
           </div>

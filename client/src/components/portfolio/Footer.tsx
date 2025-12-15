@@ -1,12 +1,13 @@
 import { motion } from "framer-motion";
-import { ArrowUp, Github, Linkedin, Twitter, Heart } from "lucide-react";
+import { ArrowUp, Github, Linkedin, Facebook, Instagram, Heart } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { useState, useEffect } from "react";
 
 const socialLinks = [
   { icon: Github, name: "GitHub", href: "https://github.com" },
   { icon: Linkedin, name: "LinkedIn", href: "https://linkedin.com" },
-  { icon: Twitter, name: "Twitter", href: "https://twitter.com" },
+  { icon: Facebook, name: "Facebook", href: "https://facebook.com" },
+  { icon: Instagram, name: "Instagram", href: "https://instagram.com" },
 ];
 
 export default function Footer() {
@@ -29,7 +30,7 @@ export default function Footer() {
       <div className="max-w-7xl mx-auto">
         <div className="flex flex-col md:flex-row items-center justify-between gap-6">
           <div className="flex items-center gap-2 text-gray-400">
-            <span>2024 Temuulen Bayanmunkh. Built with</span>
+            <span>2025 Temuulen Bayanmunkh. Built with</span>
             <Heart className="w-4 h-4 text-neon-pink fill-neon-pink" />
             <span>using React & TypeScript</span>
           </div>

@@ -1,7 +1,7 @@
 import { useState } from "react";
 import { motion } from "framer-motion";
 import { useInView } from "react-intersection-observer";
-import { Send, Mail, MapPin, Github, Linkedin, Twitter, CheckCircle } from "lucide-react";
+import { Send, Mail, MapPin, Github, Linkedin, Facebook, Instagram, CheckCircle } from "lucide-react";
 import { Card } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
@@ -22,14 +22,15 @@ interface SocialLink {
 }
 
 const contactInfo: ContactInfo[] = [
-  { icon: Mail, label: "Email", value: "temuulen.bayanmunkh@example.com", href: "mailto:temuulen.bayanmunkh@example.com" },
-  { icon: MapPin, label: "Location", value: "San Francisco, CA" },
+  { icon: Mail, label: "Email", value: "temuulen.developer@gmail.com", href: "mailto:temuulen.developer@gmail.com" },
+  { icon: MapPin, label: "Location", value: "Ulaanbaatar, Mongolia" },
 ];
 
 const socialLinks: SocialLink[] = [
   { icon: Github, name: "GitHub", href: "https://github.com" },
   { icon: Linkedin, name: "LinkedIn", href: "https://linkedin.com" },
-  { icon: Twitter, name: "Twitter", href: "https://twitter.com" },
+  { icon: Facebook, name: "Facebook", href: "https://facebook.com" },
+  { icon: Instagram, name: "Instagram", href: "https://instagram.com" },
 ];
 
 export default function ContactSection() {

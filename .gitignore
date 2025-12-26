@@ -8,6 +8,8 @@ vite.config.ts.*
 .env
 .env.local
 .env.*.local
+# Supabase
+.supabase
 
 # Project summary files
 BOT_CONVERSION.md

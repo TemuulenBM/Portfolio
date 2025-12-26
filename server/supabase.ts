@@ -1,28 +1,39 @@
-import { createClient } from "@supabase/supabase-js";
+import { createClient, type SupabaseClient } from "@supabase/supabase-js";
 import type { User } from "@shared/schema";
 
-// Supabase client configuration
-const supabaseUrl = process.env.SUPABASE_URL || "https://btuwfohndxhoqayxqqvc.supabase.co";
-const supabaseAnonKey = process.env.SUPABASE_ANON_KEY || "sb_publishable_GvM9icx1fiuN9ScnzrXOlg_Hp1wAtvb";
-
-// For server-side operations, use service role key if available
-// Otherwise, use anon key (with RLS policies)
+// Supabase configuration
+const supabaseUrl = process.env.SUPABASE_URL;
+const supabaseAnonKey = process.env.SUPABASE_ANON_KEY;
 const supabaseServiceKey = process.env.SUPABASE_SERVICE_ROLE_KEY;
 
-// Create Supabase client
-// Use service role key for server-side operations if available
-export const supabase = createClient(
-  supabaseUrl,
-  supabaseServiceKey || supabaseAnonKey,
-  {
-    auth: {
-      autoRefreshToken: false,
-      persistSession: false,
-    },
-  }
-);
+if (!supabaseUrl || !supabaseAnonKey) {
+  throw new Error(
+    "Missing Supabase environment variables: SUPABASE_URL and SUPABASE_ANON_KEY are required"
+  );
+}
 
-// Database table name
+// Create server-side Supabase client with service role key for admin operations
+// This bypasses Row Level Security (RLS) policies
+export const supabaseAdmin = supabaseServiceKey
+  ? createClient(supabaseUrl, supabaseServiceKey, {
+      auth: {
+        autoRefreshToken: false,
+        persistSession: false,
+      },
+    })
+  : null;
+
+// Create client-side Supabase client with anon key
+// This respects Row Level Security (RLS) policies
+export const supabase = createClient(supabaseUrl, supabaseAnonKey, {
+  auth: {
+    autoRefreshToken: true,
+    persistSession: true,
+    detectSessionInUrl: true,
+  },
+});
+
+// Database table names
 export const USERS_TABLE = "users";
 
 // Type for database user (matches Supabase table structure)
@@ -33,4 +44,13 @@ export type DatabaseUser = {
   created_at?: string;
   updated_at?: string;
 };
+
+// Helper function to get the appropriate Supabase client
+// Use admin client for server-side operations that need to bypass RLS
+export function getSupabaseClient(useAdmin = false): SupabaseClient {
+  if (useAdmin && supabaseAdmin) {
+    return supabaseAdmin;
+  }
+  return supabase;
+}
 

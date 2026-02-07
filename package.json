@@ -4,7 +4,7 @@
   "type": "module",
   "license": "MIT",
   "scripts": {
-    "dev": "NODE_ENV=development tsx server/index.ts",
+    "dev": "NODE_ENV=development tsx --env-file=.env server/index.ts",
     "build": "tsx script/build.ts",
     "start": "NODE_ENV=production node dist/index.cjs",
     "check": "tsc",
@@ -75,6 +75,7 @@
     "react-resizable-panels": "^2.1.7",
     "react-type-animation": "^3.2.0",
     "recharts": "^2.15.2",
+    "resend": "^6.9.1",
     "tailwind-merge": "^2.6.0",
     "tailwindcss-animate": "^1.0.7",
     "tw-animate-css": "^1.2.5",

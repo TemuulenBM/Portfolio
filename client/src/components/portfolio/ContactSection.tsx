@@ -7,6 +7,7 @@ import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
 import { useToast } from "@/hooks/use-toast";
+import { apiRequest } from "@/lib/queryClient";
 
 interface ContactInfo {
   icon: typeof Mail;
@@ -47,16 +48,27 @@ export default function ContactSection() {
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
     setIsSubmitting(true);
-    
-    await new Promise(resolve => setTimeout(resolve, 1500));
-    
-    toast({
-      title: "Message Sent!",
-      description: "Thanks for reaching out. I'll get back to you soon!",
-    });
-    
-    setFormData({ name: "", email: "", subject: "", message: "" });
-    setIsSubmitting(false);
+
+    try {
+      // API endpoint руу мессеж илгээх
+      await apiRequest("POST", "/api/contact", formData);
+
+      toast({
+        title: "Мессеж илгээгдлээ!",
+        description: "Таны мессежийг хүлээн авлаа. Удахгүй хариу өгөх болно!",
+      });
+
+      setFormData({ name: "", email: "", subject: "", message: "" });
+    } catch (err: any) {
+      // Алдааны мессежийг харуулах
+      toast({
+        title: "Алдаа гарлаа",
+        description: err.message || "Мессеж илгээхэд алдаа гарлаа. Дахин оролдоно уу.",
+        variant: "destructive",
+      });
+    } finally {
+      setIsSubmitting(false);
+    }
   };
 
   const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {

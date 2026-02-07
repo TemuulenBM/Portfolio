@@ -74,15 +74,17 @@ export default function AboutSection() {
               transition={{ duration: 0.8, delay: 0.2 }}
               className="relative"
             >
-              <div className="relative w-64 h-64 md:w-80 md:h-80 mx-auto">
-                <div className="absolute inset-0 rounded-full bg-gradient-to-r from-neon-cyan via-neon-purple to-neon-pink p-1 animate-glow-pulse">
-                  <div className="w-full h-full rounded-full bg-[#0a0a0a] flex items-center justify-center">
-                    <div className="w-[calc(100%-8px)] h-[calc(100%-8px)] rounded-full bg-gradient-to-br from-gray-800 to-gray-900 flex items-center justify-center">
-                      <User className="w-24 h-24 text-gray-600" />
-                    </div>
+              <div className="relative w-64 h-80 md:w-72 md:h-96 mx-auto">
+                <div className="absolute inset-0 rounded-2xl bg-gradient-to-r from-neon-cyan via-neon-purple to-neon-pink p-1">
+                  <div className="w-full h-full rounded-2xl bg-[#0a0a0a] flex items-center justify-center">
+                    <img
+                      src="/portfolio.jpg"
+                      alt="Temuulen Bayanmunkh"
+                      className="w-[calc(100%-8px)] h-[calc(100%-8px)] rounded-2xl object-cover object-top"
+                    />
                   </div>
                 </div>
-                <div className="absolute inset-0 rounded-full shadow-neon-cyan blur-xl opacity-30" />
+                <div className="absolute inset-0 rounded-2xl shadow-neon-cyan blur-xl opacity-30" />
               </div>
             </motion.div>
 
@@ -107,7 +109,7 @@ export default function AboutSection() {
 
           <div className="grid grid-cols-3 gap-8 mt-16">
             <AnimatedCounter end={4} suffix="+" label="Projects" icon={Briefcase} />
-            <AnimatedCounter end={1} suffix=" Year" label="Experience" icon={User} />
+            <AnimatedCounter end={2} suffix=" Years" label="Experience" icon={User} />
             <AnimatedCounter end={100} suffix="%" label="Passion" icon={Heart} />
           </div>
         </motion.div>

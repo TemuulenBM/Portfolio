@@ -4,10 +4,10 @@ import { Button } from "@/components/ui/button";
 import { useState, useEffect } from "react";
 
 const socialLinks = [
-  { icon: Github, name: "GitHub", href: "https://github.com" },
-  { icon: Linkedin, name: "LinkedIn", href: "https://linkedin.com" },
-  { icon: Facebook, name: "Facebook", href: "https://facebook.com" },
-  { icon: Instagram, name: "Instagram", href: "https://instagram.com" },
+  { icon: Github, name: "GitHub", href: "https://github.com/TemuulenBM" },
+  { icon: Linkedin, name: "LinkedIn", href: "https://www.linkedin.com/in/temuulen-bayanmunkh-304a93267/" },
+  { icon: Facebook, name: "Facebook", href: "https://www.facebook.com/temuulen.baynmunh/" },
+  { icon: Instagram, name: "Instagram", href: "https://www.instagram.com/temuulnnnz/" },
 ];
 
 export default function Footer() {

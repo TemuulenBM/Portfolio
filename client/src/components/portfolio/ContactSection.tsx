@@ -109,7 +109,7 @@ export default function ContactSection() {
                         name="name"
                         value={formData.name}
                         onChange={handleChange}
-                        placeholder="John Doe"
+                        placeholder="Your name"
                         required
                         className="bg-transparent border-gray-700 focus:border-neon-cyan text-white placeholder:text-gray-600"
                         data-testid="input-name"
@@ -123,7 +123,7 @@ export default function ContactSection() {
                         type="email"
                         value={formData.email}
                         onChange={handleChange}
-                        placeholder="john@example.com"
+                        placeholder="email@example.com"
                         required
                         className="bg-transparent border-gray-700 focus:border-neon-cyan text-white placeholder:text-gray-600"
                         data-testid="input-email"
@@ -138,7 +138,7 @@ export default function ContactSection() {
                       name="subject"
                       value={formData.subject}
                       onChange={handleChange}
-                      placeholder="Project Inquiry"
+                      placeholder="What's this about?"
                       required
                       className="bg-transparent border-gray-700 focus:border-neon-cyan text-white placeholder:text-gray-600"
                       data-testid="input-subject"

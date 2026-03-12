@@ -3,7 +3,8 @@
 import { useRef, useState } from "react"
 import { useInView } from "@/hooks/use-in-view"
 import { cn } from "@/lib/utils"
-import { Mail, Github, Linkedin, Instagram, Send, CheckCircle } from "lucide-react"
+import { Mail, Github, Linkedin, Instagram, Send, CheckCircle, AlertCircle } from "lucide-react"
+import { sendContactEmail } from "@/app/actions/contact"
 
 const socials = [
   { icon: Github, label: "GitHub", handle: "@TemuulenBM", href: "https://github.com/TemuulenBM" },
@@ -18,14 +19,21 @@ export default function ContactSection() {
   const [form, setForm] = useState({ name: "", email: "", message: "" })
   const [sent, setSent] = useState(false)
   const [sending, setSending] = useState(false)
+  const [error, setError] = useState("")
 
-  const handleSubmit = (e: React.FormEvent) => {
+  const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault()
     setSending(true)
-    setTimeout(() => {
-      setSending(false)
+    setError("")
+
+    const result = await sendContactEmail(form)
+
+    setSending(false)
+    if (result.success) {
       setSent(true)
-    }, 1500)
+    } else {
+      setError(result.error ?? "Something went wrong.")
+    }
   }
 
   return (
@@ -122,6 +130,12 @@ export default function ContactSection() {
                       className="bg-white/5 border border-white/10 rounded-xl px-4 py-3 text-sm text-foreground placeholder:text-muted-foreground/50 focus:outline-none focus:border-cyan-500/60 focus:ring-1 focus:ring-cyan-500/30 transition-all resize-none"
                     />
                   </div>
+                  {error && (
+                    <div className="flex items-center gap-2 text-sm text-rose-400 bg-rose-500/10 border border-rose-500/20 rounded-xl px-4 py-3">
+                      <AlertCircle className="w-4 h-4 flex-shrink-0" />
+                      {error}
+                    </div>
+                  )}
                   <button
                     type="submit"
                     disabled={sending}

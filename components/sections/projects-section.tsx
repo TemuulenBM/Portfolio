@@ -71,14 +71,16 @@ const projects: Project[] = [
   },
   {
     id: 5,
-    title: "MoveMongolia",
-    tagline: "Fitness survey platform",
+    title: "Maison Élise",
+    tagline: "Luxury e-commerce platform",
     description:
-      "Survey system for tracking fitness assessments across Mongolia. Testing centers register citizens, record measurements, and collect survey data. 12+ modules with Docker deployment.",
-    tech: ["Node.js", "Express", "React", "Prisma", "PostgreSQL"],
-    accentColor: "#fbbf24",
-    glowColor: "rgba(251,191,36,0.25)",
-    category: "Health Tech",
+      "Full-stack luxury fashion e-commerce with Supabase auth, Prisma ORM, Sanity CMS for editorial lookbook, and Upstash Redis for cart and rate-limiting. Includes admin panel, order management, and shoppable editorial content.",
+    tech: ["Next.js", "Prisma", "Supabase", "Sanity", "Redis", "Framer Motion"],
+    accentColor: "#d4a574",
+    glowColor: "rgba(212,165,116,0.25)",
+    category: "E-Commerce",
+    repo: "https://github.com/TemuulenBM/maison-elise",
+    live: "https://maison-elise-obte.vercel.app/",
   },
   {
     id: 6,

@@ -29,8 +29,8 @@ const projects: Project[] = [
     accentColor: "#06b6d4",
     glowColor: "rgba(6,182,212,0.25)",
     category: "Full Stack",
-    repo: "https://github.com/TemuulenBM/learnify",
-    live: "#",
+    repo: "https://github.com/TemuulenBM/Online-course-platform",
+    live: "https://online-course-platform-web.vercel.app/",
   },
   {
     id: 2,

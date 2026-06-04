@@ -34,16 +34,15 @@ const projects: Project[] = [
   },
   {
     id: 2,
-    title: "ConvoAI",
-    tagline: "AI-powered chatbot builder",
+    title: "Voidex Studio",
+    tagline: "Development studio in Ulaanbaatar",
     description:
-      "You can create a chatbot, train it on your website or custom Q&A, and embed it anywhere. Uses vector embeddings for smart answers. Has subscription tiers and analytics.",
-    tech: ["React", "Node.js", "Supabase", "OpenAI", "BullMQ"],
+      "My development studio for websites, web apps, and AI systems built end-to-end. I handle product shape, architecture, UI, backend, deployment, and launch.",
+    tech: ["Next.js", "React", "TypeScript", "Tailwind CSS", "AI Systems"],
     accentColor: "#a78bfa",
     glowColor: "rgba(167,139,250,0.25)",
-    category: "AI / SaaS",
-    repo: "https://github.com/TemuulenBM/convo-ai",
-    live: "#",
+    category: "Studio",
+    live: "https://voidex.studio/",
   },
   {
     id: 3,
@@ -58,16 +57,14 @@ const projects: Project[] = [
   },
   {
     id: 4,
-    title: "Local Retail",
-    tagline: "Offline-first POS system",
+    title: "Opsman",
+    tagline: "IT operations automation platform",
     description:
-      "Mobile app for small shop owners in Mongolia. Tracks inventory, handles sales, works offline with encrypted storage, and syncs when back online. Every stock change is logged.",
-    tech: ["Flutter", "Fastify", "Supabase", "SQLCipher", "Redis"],
+      "Solo-built 9-5 internal platform for managing machines, networks, services, automation, alerts, and audit workflows. Includes RBAC, LDAP/AD auth, graph relationships, and event-driven jobs.",
+    tech: ["React", "NestJS", "Drizzle", "PostgreSQL", "Keycloak", "Kafka"],
     accentColor: "#fb7185",
     glowColor: "rgba(251,113,133,0.25)",
-    category: "Mobile",
-    repo: "https://github.com/TemuulenBM/local-retail",
-    live: "#",
+    category: "9-5 / Enterprise",
   },
   {
     id: 5,
@@ -84,16 +81,14 @@ const projects: Project[] = [
   },
   {
     id: 6,
-    title: "Content Repurposing",
-    tagline: "AI video clip automation",
+    title: "Soril",
+    tagline: "Physical assessment platform",
     description:
-      "Give it a YouTube video and it spits out 5 short vertical clips ready for TikTok, Reels, or Shorts. AI picks the best moments, crops to 9:16, and writes captions.",
-    tech: ["n8n", "FFmpeg", "OpenAI Whisper", "GPT", "Cloudflare R2"],
+      "Side-job platform for staff-run citizen registration, physical measurements, InBody data, fitness tests, configurable scoring rules, reports, and national dashboards.",
+    tech: ["React", "Vite", "Express", "Prisma", "PostgreSQL", "Nginx"],
     accentColor: "#06b6d4",
     glowColor: "rgba(6,182,212,0.25)",
-    category: "AI Automation",
-    repo: "https://github.com/TemuulenBM/content-repurposing",
-    live: "#",
+    category: "Side Job",
   },
 ]
 
